@@ -1,0 +1,17 @@
+@use "sass:color";
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$inseg-bg: #f0f0f0;
+$main-text-color: #384864;
+$link-color: #27549e;
+$link-color-active: #6293e2;
+$aux-bg-color: #abb5c5;
+$mq-min-width: 420px;
+
+@function darken-color($color, $percentatge) {
+  @return color.adjust($color, $lightness: - $percentatge);
+}
